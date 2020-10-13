@@ -34,7 +34,9 @@
                 "s5": form.s5.value,
             };
             var data = JSON.stringify(json, 0, 4);
-            document.getElementById('output').innerHTML = data;
+            //document.getElementById('output').innerHTML = data;
+            localStorage.setItem("user", data);
+            window.location.href = "avgscore.html";
             return false
         }
     </script>
