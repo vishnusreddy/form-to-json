@@ -8,11 +8,10 @@
 </head>
 
 <body>
-    <h1>The average of all subjects is:</h1>
-    <pre id="output"></pre>
+    <h2 style="display: inline;">Your average is </h2>
+    <h2 style="display: inline;" id="output"></h2>
     <script>
         var user = JSON.parse(localStorage.getItem('user'));
-        //document.getElementById('output').innerHTML = JSON.stringify(user, 0, 4);
         document.getElementById('output').innerHTML = (Number(user.s1) + Number(user.s2) + Number(user.s3) + Number(user.s4) + Number(user.s5))/5;
     </script>
 </body>
